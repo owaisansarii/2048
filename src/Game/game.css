@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+h1 {
+  width: 100%;
+}
+.game-container {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.game-over {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.row {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.cell {
+  margin: auto;
+  border: 1px solid black;
+  width: 23%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* background-image: radial-gradient(#f5f5f5, #a19f9f); */
+}
+
+.game-over {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .game-container {
+    height: 300px;
+    width: 300px;
+  }
+}
