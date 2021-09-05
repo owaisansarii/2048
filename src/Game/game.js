@@ -10,6 +10,7 @@ import {
   moveUp,
   moveDown,
 } from "./gameboard";
+import { useSwipeable } from "react-swipeable";
 
 const Game = () => {
   const [board, setBoard] = useState(null);
@@ -112,8 +113,15 @@ const Game = () => {
     gameFocus.current.focus();
   }, []);
 
+  const handler = useSwipeable({
+    onSwipedLeft: left,
+    onSwipedRight: right,
+    onSwipedUp: up,
+    onSwipedDown: down,
+  });
+
   return (
-    <>
+    <div {...handler}>
       <h1
         style={{
           marginTop: "20px",
@@ -196,7 +204,7 @@ const Game = () => {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
