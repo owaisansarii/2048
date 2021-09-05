@@ -121,7 +121,7 @@ const Game = () => {
   });
 
   return (
-    <div {...handler}>
+    <div {...handler} style={{ touchAction: "pan-x" }}>
       <h1
         style={{
           marginTop: "20px",
