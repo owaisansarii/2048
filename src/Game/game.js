@@ -79,11 +79,12 @@ const Game = () => {
 
   const buttonStyle = {
     height: "50px",
-    width: "100px",
+    width: "90px",
     backgroundColor: "white",
     color: "black",
     borderRadius: "5px",
     fontSize: "1rem",
+    margin: "5px",
   };
 
   const onkeydown = (e) => {
@@ -125,11 +126,12 @@ const Game = () => {
       <div
         className="score"
         style={{
-          width: "500px",
+          width: "400px",
           backgroundColor: "black",
           color: "white",
           fontSize: "1rem",
           margin: "auto",
+          transition: "all 0.5s",
         }}
       >
         <h1>Score: {point}</h1>
