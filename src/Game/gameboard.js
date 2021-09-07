@@ -155,3 +155,10 @@ export const checkGameOver = (board) => {
   }
   return true;
 };
+
+export const checkWin = (board) => {
+  if (hasValue(board, 2048)) {
+    return true;
+  }
+  return false;
+};
