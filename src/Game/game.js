@@ -156,7 +156,10 @@ const Game = () => {
     }
   };
   const isTouchDevice = () => {
-    return "ontouchstart" in window || navigator.maxTouchPoints;
+    let touchDevice = "ontouchstart" in window || navigator.maxTouchPoints;
+    if (touchDevice) {
+      setTouch(true);
+    }
   };
 
   const getHighScore = () => {
