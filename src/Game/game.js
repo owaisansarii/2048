@@ -42,9 +42,9 @@ const Game = () => {
       setBoard(generateRandom(newBoard));
       if (score) {
         setPoint(point + score);
-        if (point > highScore) {
-          setHighScore(point);
-          saveHighScore(point);
+        if (point + score > highScore) {
+          setHighScore(point + score);
+          saveHighScore(point + score);
         }
       }
     }
@@ -82,9 +82,9 @@ const Game = () => {
       setBoard(generateRandom(newBoard));
       if (score) {
         setPoint(point + score);
-        if (point > highScore) {
-          setHighScore(point);
-          saveHighScore(point);
+        if (point + score > highScore) {
+          setHighScore(point + score);
+          saveHighScore(point + score);
         }
       }
     }
@@ -102,9 +102,9 @@ const Game = () => {
       setBoard(generateRandom(newBoard));
       if (score) {
         setPoint(point + score);
-        if (point > highScore) {
-          setHighScore(point);
-          saveHighScore(point);
+        if (point + score > highScore) {
+          setHighScore(point + score);
+          saveHighScore(point + score);
         }
       }
     }
